@@ -1,2 +1,2 @@
 # shell_scripts
-Scripts I write that are useful for working on in the shell.
+Scripts I write that are useful for working in the shell.

@@ -2,7 +2,7 @@
 
 # Author: Jeffrey Grover
 # Created: 08/2017
-# Purpose: Update all python packages
+# Purpose: Update all --user installed python packages
 
-pip list --outdated | cut -d' ' -f1 | xargs pip install -U --user && \
-pip3 list --outdated | cut -d' ' -f1 | xargs pip3 install -U --user
+pip2 list -v | grep 'home' | grep 'pip' | cut -d ' ' -f 1 | xargs pip2 install -U --user \
+pip3 list -v | grep 'home' | grep 'pip' | cut -d ' ' -f 1 | xargs pip3 install -U --user
